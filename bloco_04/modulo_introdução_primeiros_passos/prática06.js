@@ -1,3 +1,4 @@
+alert('digite o nome de qualquer peça de xadrez, que são: \n rei, rainha, torre, bispo, covalo ou peão' )
 let nomeDaPeca = prompt('digite o nome de uma peça de xadrez');
 
 let nome = nomeDaPeca.toLocaleLowerCase();
