@@ -1,12 +1,20 @@
-const numeroUm = -45;
-const numeroDois = 12;
+const numeroUm = 45;
+const numeroDois = -78;
+let negativeOne = Math.sign(numeroUm)
+let negativeTwo = Math.sign(numeroDois)
 
-if(numeroUm === -numeroUm){
-    console.log('negativo')
-}else{console.log('positivo')
-};
+if(negativeOne === -1){
+    console.log('negative')
+}else if(negativeOne === 1){
+    console.log('positive')
+}else{console.log('zero')}
 
-if(numeroDois === -numeroDois){
-    console.log('negativo')
-}else{console.log('positivo')}
 
+if(negativeTwo === -1){
+    console.log('negative')
+}else if(negativeTwo === 1){
+    console.log('positive')
+}else{console.log('zero')}
+
+console.log(negativeOne);
+console.log(negativeTwo);
