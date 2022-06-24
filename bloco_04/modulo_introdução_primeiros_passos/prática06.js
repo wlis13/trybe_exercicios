@@ -1,6 +1,8 @@
 let nomeDaPeca = prompt('digite o nome de uma peça de xadrez');
 
-switch(nomeDaPeca){
+let nome = nomeDaPeca.toLocaleLowerCase();
+
+switch(nome){
     case 'rei':
         document.getElementById('resultado').innerHTML = ' O (REI) move-se para todas as direções pela vertical, horizontal ou diagonal, mas apenas uma casa por lance.';
         break;
