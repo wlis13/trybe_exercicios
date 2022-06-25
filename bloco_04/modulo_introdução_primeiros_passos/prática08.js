@@ -18,7 +18,7 @@ resultado =  false;
 };console.log(resultado);
 
 
-
+//segundo exercício
 
 function parimpar(p,a,d  ){
 
@@ -37,6 +37,7 @@ return result;
 
 };parimpar(12,15,19);
 
+//terceiro exercício
 
 const numero01 = 78;
 const numero02 = 65;
