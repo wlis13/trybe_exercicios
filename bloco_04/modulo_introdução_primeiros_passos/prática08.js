@@ -38,8 +38,17 @@ return result;
 };parimpar(12,15,19);
 
 
+const numero01 = 78;
+const numero02 = 65;
+const numero03 = 11;
 
+let par = false;
 
+if(numero01 % 2 === 0 || numero02 % 2 === 0 || numero03 % 2 === 0){
+  par = true;
+}
+
+console.log(par);
 
 
 
