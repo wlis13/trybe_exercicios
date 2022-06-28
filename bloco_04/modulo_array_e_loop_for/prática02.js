@@ -6,3 +6,5 @@ for(element of numbers){
     soma += element;
 }
 console.log(soma)
+
+
