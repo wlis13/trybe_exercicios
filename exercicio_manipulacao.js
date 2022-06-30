@@ -21,6 +21,10 @@ function corrigirTexto (corrigir ){
 
 };corrigirTexto('Exercício 5.1 - JavaScript - manipulação do DOM')
 
+function textoMaiusculo (upper){
+    document.getElementsByTagName('p')[0].style.textTransform = upper
+}; textoMaiusculo('uppercase')
+
 
 
 
