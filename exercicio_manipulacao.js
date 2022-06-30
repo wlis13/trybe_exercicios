@@ -1,5 +1,5 @@
 function firstparagraph(param1){
-document.getElementsByTagName('p')[1].innerText = param1
+document.getElementsByTagName('p')[1].innerText = param1;
 
 };firstparagraph('acredito que vou ter o DOM');
 
@@ -11,9 +11,15 @@ document.getElementsByClassName('main-content')[0].style.backgroundColor = green
 
 
 function backgroundCenter (color){
-    document.getElementsByClassName('center-content')[0].style.backgroundColor = color
+    document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
 
 }; backgroundCenter('white')
+
+
+function corrigirTexto (corrigir ){
+    document.getElementsByTagName('h1')[0].innerText = corrigir;
+
+};corrigirTexto('Exercício 5.1 - JavaScript - manipulação do DOM')
 
 
 
