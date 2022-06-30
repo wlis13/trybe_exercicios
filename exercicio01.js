@@ -15,11 +15,16 @@ document.querySelector('#elementoOndeVoceEsta').nextElementSibling.innerText = t
 
 
 
-document.querySelector('#pai').firstElementChild.innerText = 'primeiro elemento filho'
+document.querySelector('#pai').firstElementChild.innerText = 'primeiro elemento filho';
 
-document.querySelector('#elementoOndeVoceEsta').previousElementSibling.style.color = 'gray'
+document.querySelector('#elementoOndeVoceEsta').previousElementSibling.style.color = 'gray';
 
 
+document.getElementById('elementoOndeVoceEsta').nextSibling;
+
+document.querySelector('#elementoOndeVoceEsta').nextElementSibling.innerText = 'esse é o terceiro filho!';
+
+document.querySelector('#pai').childNodes[5].style.color = 'gray'
 
 
 
