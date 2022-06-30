@@ -10,7 +10,10 @@ document.getElementsByClassName('main-content')[0].style.backgroundColor = green
 
 
 
+function backgroundCenter (color){
+    document.getElementsByClassName('center-content')[0].style.backgroundColor = color
 
+}; backgroundCenter('white')
 
 
 
