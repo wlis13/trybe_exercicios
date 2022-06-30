@@ -1,3 +1,17 @@
+
+let tagsp = document.getElementsByTagName('p')
+let tags = tagsp;
+
+function exibir (){
+    
+    for(element of tagsp){
+        console.log(element);
+    }
+};exibir()
+
+
+
+
 function firstparagraph(param1){
 document.getElementsByTagName('p')[1].innerText = param1;
 
