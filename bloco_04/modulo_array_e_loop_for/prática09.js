@@ -12,5 +12,7 @@ console.log(element / 2)
 }
 
 
-
-
+//criando um array com 10 posições undefineds
+let ayy = new Array(10)
+ayy[0] = 15;
+console.log(ayy)

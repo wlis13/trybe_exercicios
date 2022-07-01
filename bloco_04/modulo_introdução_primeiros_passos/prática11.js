@@ -38,10 +38,35 @@ if(grossSalary === '1556.94'){
 
 }else if( grossSalary > '5198.82'){
 
-    inssSalaryFour = grossSalary - '0.57088';
+    inssSalaryFour = grossSalary - '0570.88';
+
     inssSalaryFourNumber = new Intl.NumberFormat("pt-br",{style: 'currency',currency:'BRL',minimumFractionDigits:2}).format(inssSalaryFour)
 
     document.getElementById('result').innerHTML = '(D)' + inssSalaryFourNumber
 
 }else{document.getElementById('result').innerHTML = 'valor indisponível!'}; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
