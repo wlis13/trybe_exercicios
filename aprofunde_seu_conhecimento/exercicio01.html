@@ -58,30 +58,38 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+      //1
 let corpo = document.getElementsByTagName('body')[0];
 let titulo = document.createElement('h1');
 titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
 corpo.appendChild(titulo)
-
+      //2
 let main = document.createElement('main')
 main.className = 'main-content';
 corpo.appendChild(main)
-
+      //3
 let sessao = document.createElement('section');
 sessao.className = 'center-content'
 main.appendChild(sessao);
-
+      //4
 let paragraph = document.createElement('p');
 paragraph.innerText = 'se preparando para o projeto';
 sessao.appendChild(paragraph);
-
+      //5
 let sessaoLeft = document.createElement('section');
 sessaoLeft.className = 'left-content';
 main.appendChild(sessaoLeft);
-
+      //6
 let sessaoRight = document.createElement('section');
 sessaoRight.className = 'rigth-content';
 main.appendChild(sessaoRight);
+      //7
+let image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+sessaoLeft.appendChild(image);
+
+
 
     </script>
   </body>
