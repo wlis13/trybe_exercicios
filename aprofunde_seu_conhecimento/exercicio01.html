@@ -79,11 +79,14 @@ sessao.appendChild(paragraph);
       //5
 let sessaoLeft = document.createElement('section');
 sessaoLeft.className = 'left-content';
+sessaoLeft.innerText = 'está é a sessão que será retirada'
 main.appendChild(sessaoLeft);
+main.removeChild(sessaoLeft)
       //6
 let sessaoRight = document.createElement('section');
 sessaoRight.className = 'rigth-content';
 main.appendChild(sessaoRight);
+sessaoRight.style.textAlign = 'center'
       //7
 let image = document.createElement('img');
 image.src = 'https://picsum.photos/200';
@@ -119,6 +122,9 @@ main.appendChild(titulo3);
 titulo1.className = 'description'
 titulo2.className = 'description'
 titulo3.className = 'description'
-    </script>
+
+
+
+  </script>
   </body>
 </html>
