@@ -95,6 +95,7 @@ image.className = 'small-image';
 sessaoLeft.appendChild(image);
       //8
 let list = document.createElement('ul')
+sessaoRight.appendChild(list)
 let listItens = [
 'um',
 'dois',
@@ -107,12 +108,35 @@ let listItens = [
 'nove',
 'dez',
 ];
+
 for(element of listItens){
-  let itens = document.createElement('li')
-itens.innerText = element
-list.appendChild(itens);
-sessaoRight.appendChild(list)
+  let itens = document.createElement('li');
+  itens.innerText = element;
+  itens.className = 'conteudosLista'
+  list.appendChild(itens);
+ 
 };
+
+let conteudoDosItens = document.getElementsByClassName('conteudosLista');
+
+for(elemento of conteudoDosItens){
+
+  if(elemento.innerText.includes('nove')){
+    list.removeChild(elemento)
+  };
+  
+};
+
+for(elemento1 of conteudoDosItens){
+  if(elemento1.innerText.includes('dez')){
+    list.removeChild(elemento1)
+  }
+}
+
+
+
+
+
       //9
 let titulo1 = document.createElement('h3');
 let titulo2 = document.createElement('h3');
