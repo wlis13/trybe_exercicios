@@ -25,6 +25,13 @@ firstLi.className = 'tech';
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
+input.addEventListener('change', addtext)
+
+function addtext (){
+let text = document.getElementById('input').value;
+
+document.getElementById('first-li').innerHTML += ':   ' +  text
+};
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
