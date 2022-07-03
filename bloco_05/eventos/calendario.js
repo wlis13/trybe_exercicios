@@ -44,10 +44,26 @@ for(elemento of feriados){
 
 let friDay = document.querySelectorAll('.day');
 for(elementos of friDay){
-    if(elementos.innerText.includes(04)){
-        elementos.className += ' friday'
-    }
-}
+    if(elementos.innerText.includes(14)){
+        
+    }else if(elementos.innerText.includes(24)){
+
+    }else if(elementos.innerText.includes(4)){
+        elementos.className += ' friday';
+    };
+
+    if(elementos.innerText.includes(11)){
+        elementos.className += ' friday';
+    };
+    
+    if(elementos.innerText.includes(18)){
+        elementos.className += ' friday';
+    };
+
+    if(elementos.innerText.includes(25)){
+        elementos.className += ' friday';
+    };
+};
 
 
 
