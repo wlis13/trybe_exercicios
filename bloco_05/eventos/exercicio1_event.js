@@ -34,6 +34,17 @@ document.getElementById('first-li').innerHTML += ':   ' +  text
 };
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
+let titulo3 = document.getElementById('my-spotrybefy');
+titulo3.innerText = '';
+let link = document.createElement('a')
+link.innerText = 'Meu top 3 do Spotrybefy'
+link.style.textDecoration = 'none'
+link.style.color = 'white'
+link.href = 'https://www.w3schools.com/jsref/dom_obj_event.asp'
+link.target = '_blank'
+titulo3.appendChild(link)
+
+
 // 4.1. Que tal redirecionar para seu portfólio?
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
