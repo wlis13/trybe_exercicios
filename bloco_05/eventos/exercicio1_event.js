@@ -25,30 +25,46 @@ firstLi.className = 'tech';
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-input.addEventListener('change', addtext)
+input.addEventListener('input', addtext)
 
 function addtext (){
 let text = document.getElementById('input').value;
 
-document.getElementById('first-li').innerHTML += ':   ' +  text
+document.getElementById('first-li').innerHTML = 'Aqui está a primeira tecnologia que mais gostei:  ' + text
 };
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 let titulo3 = document.getElementById('my-spotrybefy');
-titulo3.innerText = '';
-let link = document.createElement('a')
-link.innerText = 'Meu top 3 do Spotrybefy'
-link.style.textDecoration = 'none'
-link.style.color = 'white'
-link.href = 'https://www.w3schools.com/jsref/dom_obj_event.asp'
-link.target = '_blank'
-titulo3.appendChild(link)
+titulo3.addEventListener('click',clicar)
 
+function clicar (){
+titulo3.innerText = ''
+let link = document.createElement('a');
+link.className = 'link1';
+link.innerText = 'Meu top 3 do Spotrybefy'
+link.style.color = 'white';
+link.style.textDecoration = 'none';
+link.href = 'https://www.w3schools.com/jsref/dom_obj_event.asp'
+link.target = '_blank';
+titulo3.appendChild(link)
+};
 
 // 4.1. Que tal redirecionar para seu portfólio?
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
+// a cor do mesmo;  cor : #2fc18c
+titulo3.addEventListener('mouseenter',changeColor);
+titulo3.addEventListener('mouseleave',changeColorLeave);
+
+function changeColor () {
+titulo3.style.color = '#2fc18c'
+};
+
+function changeColorLeave () {
+
+  titulo3.style.color = 'white'
+}
+
 
 // Segue abaixo um exemplo do uso de event.target:
 
