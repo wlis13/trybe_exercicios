@@ -79,7 +79,7 @@ container.appendChild(botao);
 
 let button = document.getElementById('btn-holiday');
 button.addEventListener('click',corfriday)
-
+button.className = 'btc-holiday'
 
 function corfriday () {
     let dia1 = document.getElementsByClassName('holiday')[0];
@@ -108,16 +108,37 @@ dia3Novo.style.backgroundColor = 'rgb(238,238,238)'
 dia1Novo.style.border = 'none'
 dia2Novo.style.border = 'none'
 dia3Novo.style.border = 'none'
+};
+
+let buttonFriday = document.createElement('button')
+buttonFriday.innerText = 'Sexta-feira';
+container.appendChild(buttonFriday)
+buttonFriday.addEventListener('click',duasSextas)
+
+let sextou = document.getElementsByClassName('friday');
+
+
+function sextasFeiras () {
+for(elemento1 of sextou){
+elemento1.style.backgroundColor = 'green';
+elemento1.style.color = 'white';
 }
+};
 
+function sextasFeirasInvert () {
+    for(elemento2 of sextou){
+        elemento2.style.backgroundColor= "rgb(238,238,238)"
+        elemento2.style.color = '#777'
+    }
+};
 
-
-
-
-
-
-
-
+function duasSextas () {
+    if(buttonFriday === addEventListener('click',sextasFeiras)){
+        buttonFriday = addEventListener('click',sextasFeirasInvert)
+    
+    }else(buttonFriday = addEventListener('click',sextasFeiras));
+    
+}
 
 
 
