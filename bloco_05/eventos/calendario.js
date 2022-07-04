@@ -73,77 +73,75 @@ let botao = document.createElement('button');
 botao.innerText = 'feriados';
 botao.id = 'btn-holiday';
 container.appendChild(botao);
-
+botao.addEventListener('click',funcaoFeriados)
 };criarBotao();
-//"rgb(238,238,238)"
+                                                                                //"rgb(238,238,238)"
+let referencia2 = false;
 
-let button = document.getElementById('btn-holiday');
-button.addEventListener('click',corfriday)
-button.className = 'btc-holiday'
+function funcaoFeriados () {
+    let todosFeriados = document.getElementsByClassName('holiday');
+    if(referencia2 === false){
+        todosFeriados[0].style.backgroundColor = 'purple';
+        todosFeriados[0].style.color = 'white';
+        todosFeriados[1].style.backgroundColor = 'purple';
+        todosFeriados[1].style.color = 'white';
+        todosFeriados[2].style.backgroundColor = 'purple';
+        todosFeriados[2].style.color = 'white';
+      
+        referencia2 = true;
+    }else{todosFeriados[0].style.backgroundColor = "rgb(238,238,238)"
+todosFeriados[0].style.color = '#777';
+todosFeriados[1].style.backgroundColor = "rgb(238,238,238)"
+todosFeriados[1].style.color = '#777';
+todosFeriados[2].style.backgroundColor = "rgb(238,238,238)"
+todosFeriados[2].style.color = '#777';
 
-function corfriday () {
-    let dia1 = document.getElementsByClassName('holiday')[0];
-    dia1.style.backgroundColor = 'purple';
-    dia1.style.borderRadius = '10px';
-    dia1.style.border = '3px solid green'
-    let dia2 = document.getElementsByClassName('holiday')[1];
-    dia2.style.backgroundColor = 'purple';
-    dia2.style.borderRadius = '10px';
-    dia2.style.border = '3px solid green'
-    let dia3 = document.getElementsByClassName('holiday')[2];
-    dia3.style.backgroundColor = 'purple';
-    dia3.style.borderRadius = '10px';
-    dia3.style.border = '3px solid green'
-};
-
-button.addEventListener('dblclick',retornaCor)
-let dia1Novo = document.getElementsByClassName('holiday')[0];
-let dia2Novo = document.getElementsByClassName('holiday')[1];
-let dia3Novo = document.getElementsByClassName('holiday')[2];
-
-function retornaCor () {
-dia1Novo.style.backgroundColor = 'rgb(238,238,238)'
-dia2Novo.style.backgroundColor = 'rgb(238,238,238)'
-dia3Novo.style.backgroundColor = 'rgb(238,238,238)'
-dia1Novo.style.border = 'none'
-dia2Novo.style.border = 'none'
-dia3Novo.style.border = 'none'
-};
-
-let buttonFriday = document.createElement('button')
-buttonFriday.innerText = 'Sexta-feira';
-container.appendChild(buttonFriday)
-buttonFriday.addEventListener('click',duasSextas)
-
-let sextou = document.getElementsByClassName('friday');
-
-
-function sextasFeiras () {
-for(elemento1 of sextou){
-elemento1.style.backgroundColor = 'green';
-elemento1.style.color = 'white';
+referencia2 = false;}
 }
-};
 
-function sextasFeirasInvert () {
-    for(elemento2 of sextou){
-        elemento2.style.backgroundColor= "rgb(238,238,238)"
-        elemento2.style.color = '#777'
-    }
-};
+
+
+
+
+
+
+
+
+
+
+
+function criarNovoBotao () {
+    let novoBotao = document.createElement('button');
+    novoBotao.innerText = 'Sexta-feira';
+    container.appendChild(novoBotao);
+    novoBotao.addEventListener('click',duasSextas)
+};criarNovoBotao()
+
+let referencia1 = false;
 
 function duasSextas () {
-    if(buttonFriday === addEventListener('click',sextasFeiras)){
-        buttonFriday = addEventListener('click',sextasFeirasInvert)
-    
-    }else(buttonFriday = addEventListener('click',sextasFeiras));
-    
-}
+    let sextasFeiras = document.getElementsByClassName('friday');
+    if(referencia1 === false){
+        sextasFeiras[0].style.backgroundColor = 'green';
+        sextasFeiras[0].style.color = 'white';
+        sextasFeiras[1].style.backgroundColor = 'green';
+        sextasFeiras[1].style.color = 'white';
+        sextasFeiras[2].style.backgroundColor = 'green';
+        sextasFeiras[2].style.color = 'white';
+        sextasFeiras[3].style.backgroundColor = 'green';
+        sextasFeiras[3].style.color = 'white';
+        referencia1 = true;
+    }else{sextasFeiras[0].style.backgroundColor = "rgb(238,238,238)"
+    sextasFeiras[0].style.color = '#777'
+    sextasFeiras[1].style.backgroundColor = "rgb(238,238,238)"
+    sextasFeiras[1].style.color = '#777'
+    sextasFeiras[2].style.backgroundColor = "rgb(238,238,238)"
+    sextasFeiras[2].style.color = '#777'
+    sextasFeiras[3].style.backgroundColor = "rgb(238,238,238)"
+    sextasFeiras[3].style.color = '#777'
 
-
-
-
-
+referencia1 = false;}
+};
 
 
 
