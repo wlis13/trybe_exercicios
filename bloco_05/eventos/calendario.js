@@ -67,15 +67,6 @@ for(elementos of friDay){
 
 
 let container = document.getElementsByClassName('buttons-container')[0];
-let holidays = document.querySelectorAll('.holiday')[0];
-holidays.addEventListener('click',criarBotao);
-holidays.style.color = 'green';
-let holidays1 = document.querySelectorAll('.holiday')[1];
-holidays1.addEventListener('click',criarBotao)
-holidays1.style.color = 'green';
-let holidays2 = document.querySelectorAll('.holiday')[2];
-holidays2.addEventListener('click',criarBotao)
-holidays2.style.color = 'green';
 
 function criarBotao (feriados) {
 let botao = document.createElement('button');
@@ -83,11 +74,41 @@ botao.innerText = 'feriados';
 botao.id = 'btn-holiday';
 container.appendChild(botao);
 
+};criarBotao();
+//"rgb(238,238,238)"
+
+let button = document.getElementById('btn-holiday');
+button.addEventListener('click',corfriday)
+
+
+function corfriday () {
+    let dia1 = document.getElementsByClassName('holiday')[0];
+    dia1.style.backgroundColor = 'purple';
+    dia1.style.borderRadius = '10px';
+    dia1.style.border = '3px solid green'
+    let dia2 = document.getElementsByClassName('holiday')[1];
+    dia2.style.backgroundColor = 'purple';
+    dia2.style.borderRadius = '10px';
+    dia2.style.border = '3px solid green'
+    let dia3 = document.getElementsByClassName('holiday')[2];
+    dia3.style.backgroundColor = 'purple';
+    dia3.style.borderRadius = '10px';
+    dia3.style.border = '3px solid green'
 };
 
+button.addEventListener('dblclick',retornaCor)
+let dia1Novo = document.getElementsByClassName('holiday')[0];
+let dia2Novo = document.getElementsByClassName('holiday')[1];
+let dia3Novo = document.getElementsByClassName('holiday')[2];
 
-
-
+function retornaCor () {
+dia1Novo.style.backgroundColor = 'rgb(238,238,238)'
+dia2Novo.style.backgroundColor = 'rgb(238,238,238)'
+dia3Novo.style.backgroundColor = 'rgb(238,238,238)'
+dia1Novo.style.border = 'none'
+dia2Novo.style.border = 'none'
+dia3Novo.style.border = 'none'
+}
 
 
 
