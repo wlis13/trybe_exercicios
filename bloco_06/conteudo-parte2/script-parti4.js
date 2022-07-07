@@ -16,6 +16,6 @@ corpo.style.backgroundColor = 'lightblue';
 
 text.addEventListener('keypress',function(event){
     event.preventDefault();
-text.value = 'acesso negado!'.toUpperCase();
+text.value = 'acesso negado!';
 
 })

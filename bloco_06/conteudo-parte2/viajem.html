@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se inscreva para concorrer!</title>
+    <link rel="stylesheet" href="viajem.css">
+</head>
+<body>
+    <header>
+        <h1>inscrição </h1>
+    </header>
+        <fieldset id="fieldset">
+
+            <form action="">
+
+            
+                <legend>inscrição aqui</legend>
+                <br>
+                <label for="input-text">nome:
+                <input type="text" name="nome" id="input-text">            
+                </label>
+                <br>
+                <label for="input-email">Email:
+                <input type="email" name="email" id="input-email">
+                </label>
+                <br>
+                <p>Responda a seguinte pergunta:</p>
+                <p>qual a forma de calcular o valor do perímetro de um circulo?</p>
+                <label for="resposta-01">
+                <input type="radio" name="options" id="resposta-01">largura * altura * PI
+                </label>
+                <label for="resposta-02">
+                <input type="radio" name="options" id="resposta-02">comprimento do raio + 3.14 x 20%
+                </label>
+                <label for="resposta-03">
+                <input type="radio" name="options" id="resposta-03">2 x 3.14 x comprimento do raio
+                </label>
+                <label for="resposta-04">
+                <input type="radio" name="options" id="resposta-04">2 x 3.14 x largura
+                </label>
+                <br>
+                <br>
+                <p>descreva sua resposta:</p>
+                <textarea class="textarea" name="descrição" id="descrição-01" cols="60" rows="15"></textarea>
+                <br>
+                <br>
+                <label for="">Data:
+                    <input  type="date" name="calendario" id="date">
+                </label>
+                <p>Escolha como voçê gostaria de receber o resultado.</p>
+                <label for="">via Email:
+                    <input type="checkbox" name="resultado-por-email" >
+                </label>
+                <br>
+                <label for="">via Telefone:
+                    <input type="checkbox" name="resultado-por-celular"> 
+                </label>
+        </fieldset>
+                <br>
+                <button  class="buttons" type="submit">Enviar</button>
+                <button class="buttons"  id="reset" type="reset">Apagar</button>
+
+            </form>
+
+        <script src="viajem.js"></script>
+</body>
+</html>

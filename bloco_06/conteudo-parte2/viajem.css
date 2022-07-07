@@ -1,0 +1,33 @@
+body{
+font-family: sans-serif;
+background-color: lightgreen;
+font-weight: 600;
+}
+h1{
+text-decoration: underline;
+}
+#fieldset{
+box-shadow: 3px 3px 6px black;
+}
+.textarea{
+box-shadow: 2px 2px 4px black;
+font-family: sans-serif;
+font-size: 18px;
+}
+#date{
+font-family: sans-serif;
+font-size: 15px;
+font-weight: 600;
+border: 2px solid black;
+}
+.buttons{
+background-color: lightgreen;
+color: black;
+width: 80px;
+height: 40px;
+padding: 4px;
+font-size: 20px;
+font-weight: 600;
+border-radius: 8px;
+
+}
