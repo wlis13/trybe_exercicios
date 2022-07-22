@@ -3,18 +3,18 @@ const momentsDays = (morning, afternoon, evening) => {
     afternoon('Bora tomar um café!!');
     evening('Bora dormir!!')
 };
-const morning = (firstParameter) => {
+const manha = (firstParameter) => {
     console.log(`O valor do primeiro parâmetro é: ${firstParameter}`)
 };
 
-const afternoon = (secondParameter) => {
+const tarde = (secondParameter) => {
     console.log(`O valor do segundo parâmetro é: ${secondParameter}`);
 };
 
-const evening = (thirdParameter) => {
+const noite = (thirdParameter) => {
     console.log(`Por último o valor do terceiro parâmetro é: ${thirdParameter}`);
 };
-momentsDays(morning,afternoon,evening)
+momentsDays(manha,tarde,noite)
 
 
 
