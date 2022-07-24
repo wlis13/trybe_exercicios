@@ -60,14 +60,11 @@ const books = [
       releaseYear: 1928,
     },
   ];
-
-let media = 0
-const resultadoMedia = books.reduce((acc, curr, index) => {
-media += curr.releaseYear - curr.author.birthYear ;
- return media / index;
-    
-});
-
-console.log(resultadoMedia)
-
+let referenc = 0;
+const moreName = books.reduce((acc, curr) =>{
+    if (curr.name.length > referenc) {
+        referenc = curr;
+    }
+},0)
   
+console.log(referenc)
