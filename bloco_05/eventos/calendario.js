@@ -99,17 +99,6 @@ todosFeriados[2].style.color = '#777';
 referencia2 = false;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 function criarNovoBotao () {
     let novoBotao = document.createElement('button');
     novoBotao.innerText = 'Sexta-feira';
