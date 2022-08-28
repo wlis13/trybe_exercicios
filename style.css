@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#começar {
+  margin: 5px;
+}
+
+#stop {
+  margin: 5px;
+}
+
+#reset {
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  padding: 8px 20px;
+  background-color: rgb(103, 161, 103);
+  color: white;
+  font-size: 20pt;
+  border-radius: 5px;
+  border: 4px solid green;
+  margin-top: 20px;
+  box-shadow: 2px 2px 4px black;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40pt;
+}
+
+#minutos {
+  margin: 5px;
+  height: 40px;
+  width: 200px;
+  font-size: 30pt;
+}
+
+#segundos {
+  margin: 5px;
+  height: 40px;
+  width: 200px;
+  font-size: 30pt;
+}
