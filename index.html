@@ -4,27 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>alarme-javascript</title>
   </head>
   <body>
-    <div class="container">
-      <h2>minutos:</h2>
-      <input type="number" name="minutos" id="minutos" />
-      <h2>segundos:</h2>
-      <input type="number" name="segundos" id="segundos" />
-    </div>
+    <audio id="audio" style="display: none" src="som.mp3"></audio>
+    <div class="all">
+      <h1 id="title">Cronometrologia</h1>
+      <div class="container">
+        <h2>minutos:</h2>
+        <input type="number" name="minutos" id="minutos" />
+        <h2>segundos:</h2>
+        <input type="number" name="segundos" id="segundos" />
+        <p id="mile"></p>
+      </div>
 
-    <div class="buttons">
-      <button id="começar">Começar!</button>
-      <button id="stop">Stop!</button>
-      <button id="reset">Reset</button>
-    </div>
+      <div class="buttons">
+        <button id="começar">Começar!</button>
+        <button id="stop">Stop!</button>
+        <button id="reset">Reset</button>
+      </div>
 
-    <div>
-      <h3 id="display"></h3>
+      <div>
+        <h3 id="display"></h3>
+      </div>
     </div>
-    <p id="paragrafo"></p>
     <script src="script.js"></script>
   </body>
 </html>
